@@ -14,7 +14,7 @@ const Contact = () => {
 
     try {
       const { data } = await axios.post(
-        "http://localhost:4000/api/v1/message/send",
+        "https://backend-portfolio-1-3m3a.onrender.com/api/v1/message/send",
         { senderName, subject, message },
         { withCredentials: true }
       );

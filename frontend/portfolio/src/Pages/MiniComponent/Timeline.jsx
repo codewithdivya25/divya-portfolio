@@ -10,7 +10,7 @@ const Timeline = () => {
     const getMyTimeline = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/timeline/getall",
+          "https://backend-portfolio-1-3m3a.onrender.com/api/v1/timeline/getall",
           { withCredentials: true }
         );
         setTimeline(data?.timelines || []);

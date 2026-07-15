@@ -9,7 +9,7 @@ const Skills = () => {
     const getMySkills = async () => {
       try {
         const { data } = await axios.get(
-          "http://localhost:4000/api/v1/skill/getall",
+          "https://backend-portfolio-1-3m3a.onrender.com/api/v1/skill/getall",
           { withCredentials: true }
         );
         setSkills(data.skills || []);

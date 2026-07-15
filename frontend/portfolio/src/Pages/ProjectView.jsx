@@ -12,7 +12,7 @@ const ProjectView = () => {
     const getProject = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:4000/api/v1/project/getsingle/${id}`,
+          `https://backend-portfolio-1-3m3a.onrender.com/api/v1/project/getsingle/${id}`,
           { withCredentials: true }
         );
         setProject(res.data.project);
