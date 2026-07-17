@@ -65,7 +65,7 @@ const About = () => {
               <div className="absolute inset-0 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 blur-xl opacity-30"></div>
 
               <img
-                src={user.avatar?.url || "https://via.placeholder.com/300"}
+                src={user.avatar?.url }
                 alt="profile"
                 className="relative w-64 h-64 object-cover object-top    rounded-full border-4 border-white dark:border-zinc-800 shadow-2xl hover:scale-105 transition duration-300"
               />
@@ -89,7 +89,7 @@ const About = () => {
             </p>
 
             <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4">
-              {user.aboutMe ||
+              {user.aboutme ||
                 "I build modern, scalable and high-performance web applications with clean UI and smooth UX."}
             </p>
 
