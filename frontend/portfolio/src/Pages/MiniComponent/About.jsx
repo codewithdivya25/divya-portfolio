@@ -9,7 +9,7 @@ const About = () => {
     const getMyProfile = async () => {
       try {
         const { data } = await axios.get(
-          "/api/v1/user/me",
+          "https://backend-portfolio-1-3m3a.onrender.com/api/v1/user/me",
           { withCredentials: true }
         );
         setUser(data.user);
